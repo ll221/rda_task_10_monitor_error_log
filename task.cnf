@@ -1,4 +1,4 @@
-# # The MySQL database server configuration file.
+# The MySQL database server configuration file.
 #
 # One can use all long options that the program supports.
 # Run program with --help to get a list of available options and with
@@ -32,8 +32,8 @@ datadir	= /var/lib/mysql
 # Instead of skip-networking the default is now to listen only on
 # localhost which is more compatible and is not less secure.
 
-bind-address		= 127.0.0.1
-# bind-address		= 0.0.0.0
+bind-address		= 0.0.0.0
+# bind-address		= 127.0.0.1
 
 mysqlx-bind-address	= 127.0.0.1
 #
