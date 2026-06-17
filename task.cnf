@@ -1,4 +1,4 @@
-# # The MySQL database server configuration file.
+# The MySQL database server configuration file.
 #
 # One can use all long options that the program supports.
 # Run program with --help to get a list of available options and with
@@ -49,6 +49,7 @@ max_allowed_packet	= 64M
 # the first time they are touched
 myisam-recover-options  = BACKUP
 
+# max_connections        = 5
 max_connections        = 151
 
 # table_open_cache       = 4000
