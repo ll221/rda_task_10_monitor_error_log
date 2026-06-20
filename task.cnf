@@ -18,7 +18,7 @@
 user            = mysql
 # pid-file      = /var/run/mysqld/mysqld.pid
 # socket        = /var/run/mysqld/mysqld.sock
-# port          = 3306
+port            = 3306
 # datadir       = /var/lib/mysql
 
 
@@ -63,8 +63,9 @@ myisam-recover-options  = BACKUP
 log_error = /var/log/mysql/error.log
 #
 # Here you can see queries with especially long duration
-# slow_query_log                = 1
-# slow_query_log_file   = /var/log/mysql/mysql-slow.log
+slow_query_log          = 1
+slow_query_log_file     = /var/log/mysql/mysql-slow.log
+# slow_query_log_file   = /data/mysql-slow.log
 # long_query_time = 2
 # log-queries-not-using-indexes
 #
@@ -77,4 +78,3 @@ log_error = /var/log/mysql/error.log
 max_binlog_size   = 100M
 # binlog_do_db          = include_database_name
 # binlog_ignore_db      = include_database_name
-
